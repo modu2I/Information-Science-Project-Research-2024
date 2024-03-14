@@ -7,7 +7,13 @@ public class PrimeNumber {
         int numberStart = scanner.nextInt();
         int numberEnd = scanner.nextInt();
 
-        for (int k = numberStart; k <= numberEnd; k++) {
+        if(numberStart > numberEnd){
+            int temp = numberStart;
+            numberStart = numberEnd;
+            numberEnd = temp;
+        }
+
+            for (int k = numberStart; k <= numberEnd; k++) {
             isPrimeNumber = true;
 
             if (k < 2) {
