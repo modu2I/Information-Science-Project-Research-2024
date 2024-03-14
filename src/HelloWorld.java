@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+//alt shift f10
+
 public class HelloWorld {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
