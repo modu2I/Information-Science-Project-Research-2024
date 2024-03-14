@@ -8,10 +8,10 @@ public class PrimeNumber {
         if(number < 2){
             count = 1;
         }else {
-            for (int i = 2; i < number; i = i + 1) {
+            for (int i = 2; i*i <= number; i = i + 1) {  // Performance improvement is achieved even when it is not a prime number entered.
                 if (number % i == 0) {
                     count = count + 1;
-                    break;  //Performance is improved by escaping from the for loop when the first divisor is found.
+                    break;  // Performance is improved by escaping from the for loop when the first divisor is found.
                 }
                 System.out.print(i + " ");
             }
