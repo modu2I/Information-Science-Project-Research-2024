@@ -6,8 +6,9 @@ public class PokemonGame {
     public static void main(String[] args) {
         Pikachu pika1 = new Pikachu("Pikachu", 50);
         Squirtle s2 = new Squirtle("Squirtle", 70);
-        pika1.info();
-        s2.info();
+//        pika1.info();
+//        s2.info();
+        s2.attack();
 
 //        Pikachu pika2 = new Pikachu();
 //        Squirtle s1 = new Squirtle();

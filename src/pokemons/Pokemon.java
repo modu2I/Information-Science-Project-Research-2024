@@ -37,4 +37,6 @@ public abstract class Pokemon{
         System.out.println("NAME : " + getName());
         System.out.println("HP : " + getHp());
     }
+
+    public abstract void attack();
 }
