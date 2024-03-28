@@ -1,6 +1,6 @@
 package pokemons;
 
-public class Charizard extends Pokemon implements Flyable{
+public class Charizard extends Pokemon{
 
 
     @Override
@@ -12,6 +12,4 @@ public class Charizard extends Pokemon implements Flyable{
     public void attack(Pokemon targetPokemon) {
         System.out.println(this.getName() + " fires a firethrower attack at " + targetPokemon.getName());
     }
-
-
 }
