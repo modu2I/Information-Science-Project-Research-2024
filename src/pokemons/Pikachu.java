@@ -21,6 +21,6 @@ public class Pikachu extends Pokemon {
 
     @Override
     public void attack(Pokemon targetPokemon) {
-        System.out.println("Attacks " + targetPokemon.getName() + " with 100k wolts of electricity");
+        System.out.println(this.getName() + " attacks " + targetPokemon.getName() + " with 100k wolts of electricity");
     }
 }
