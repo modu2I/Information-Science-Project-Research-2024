@@ -2,7 +2,8 @@ import pokemons.*;
 
 public class PokemonGame {
     public static void main(String[] args) {
-        Charizard c1 = new Charizard("Charlizard", 150, new Wings());
+        Wings wings = new Wings();
+        Charizard c1 = new Charizard("Charlizard", 150, wings); // Aggregation
 //        c1.setFlyable(new Wings());
         c1.performFly();
         Pikachu p1 = new Pikachu("Pikachu", 50, new NoFly());
