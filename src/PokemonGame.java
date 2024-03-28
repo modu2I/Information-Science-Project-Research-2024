@@ -8,6 +8,7 @@ public class PokemonGame {
         Charizard c1 = new Charizard();
         c1.setName("Charizard");
         c1.setHp(150);
+        c1.fly();
         Pikachu p1 = new Pikachu("Pikachu", 50);
         Squirtle s2 = new Squirtle("Squirtle", 70);
         s2.attack(p1);
