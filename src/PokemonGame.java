@@ -2,11 +2,11 @@ import pokemons.*;
 
 public class PokemonGame {
     public static void main(String[] args) {
-        Charizard c1 = new Charizard();
-        c1.setFlyable(new Wings());
+        Charizard c1 = new Charizard("Charlizard", 150, new Wings());
+//        c1.setFlyable(new Wings());
         c1.performFly();
-        Pikachu p1 = new Pikachu("Pikachu", 50);
-        p1.setFlyable(new NoFly());
+        Pikachu p1 = new Pikachu("Pikachu", 50, new NoFly());
+//        p1.setFlyable(new NoFly());
         p1.performFly();
         Rocket rocket = new Rocket();
         p1.setFlyable(rocket);
