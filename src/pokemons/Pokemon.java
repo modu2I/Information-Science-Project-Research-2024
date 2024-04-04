@@ -6,6 +6,9 @@ public abstract class Pokemon{
 
     protected int attackPoint;
 
+    protected String[] skills;
+    protected int[] skillPoints;
+
     Flyable flyable; // has-a
 
     public void setFlyable(Flyable flyable) {

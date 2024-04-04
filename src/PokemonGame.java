@@ -43,6 +43,7 @@ public class PokemonGame {
             }
             else if (menu == 1) {
                 playerPokemon.attack(wildPokemon);
+                wildPokemon.attack(playerPokemon);
             }
             else if (menu == 2) {
                 System.out.println("The player's Pokemon runs away.");
