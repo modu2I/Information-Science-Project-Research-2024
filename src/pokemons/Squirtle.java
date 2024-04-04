@@ -8,6 +8,7 @@ public class Squirtle extends Pokemon{
     public Squirtle(String name, int hp) {
         super(name, hp);
         super.setFlyable(new NoFly());
+        this.attackPoint = 12;
         System.out.println("Crrrrrrr");
     }
 
