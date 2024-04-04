@@ -1,4 +1,4 @@
-import pokemons.*;
+package pokemons;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -42,8 +42,10 @@ public class PokemonGame {
                 break;
             }
             else if (menu == 1) {
-                playerPokemon.attack(wildPokemon);
-                wildPokemon.attack(playerPokemon);
+                System.out.print("\t1) " + playerPokemon.skills[0] + "\n\t2) " + playerPokemon.skills[1] + "\n\t3) " + playerPokemon.skills[2] + "  : ");
+                int skill = scanner.nextInt() - 1;
+                playerPokemon.attack(wildPokemon, skill);
+//                wildPokemon.attack(playerPokemon);
             }
             else if (menu == 2) {
                 System.out.println("The player's Pokemon runs away.");
