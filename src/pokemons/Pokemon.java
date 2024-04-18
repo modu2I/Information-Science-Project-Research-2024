@@ -1,15 +1,19 @@
 package pokemons;
 
+import java.util.List;
+
 public abstract class Pokemon{
     private String name;
     private int hp;
-
     protected int attackPoint;
 
-    protected String[] skills;
-    protected Integer[] skillPoints;
+//    protected String[] skills;
+//    protected Integer[] skillPoints;
 
-    Flyable flyable; // has-a
+    protected List<String> skills;
+    protected List<Integer> skillPoints;
+
+    Flyable flyable;  // has-a
 
     public void setFlyable(Flyable flyable) {
         this.flyable = flyable;
@@ -20,17 +24,16 @@ public abstract class Pokemon{
         this.flyable.fly();
     }
 
-    // crtl + insert
     public Pokemon() {
         this.name = "nameless";
         this.hp = 10;
-//        System.out.println("default constructor");
+        //System.out.println("default constructor!");
     }
 
     public Pokemon(String name, int hp) {
         this.name = name;
         this.hp = hp;
-//        System.out.println("parameter constructor");
+        //System.out.println("parameter constructor~");
     }
 
     public String getName() {
@@ -50,12 +53,12 @@ public abstract class Pokemon{
     }
 
     public void info(){
-        System.out.println("NAME : " + getName());
+        System.out.println("Name : " + getName());
         System.out.println("HP : " + getHp());
     }
 
     public abstract void attack();
     public abstract void attack(Pokemon targetPokemon, int skill);
 
-//    public abstract void fly();
+    //public abstract void fly();
 }
